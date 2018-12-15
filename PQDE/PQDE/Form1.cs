@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PQDE.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,5 +18,9 @@ namespace PQDE
             InitializeComponent();
         }
 
+        private void openToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Commands.Open();
+        }
     }
 }
