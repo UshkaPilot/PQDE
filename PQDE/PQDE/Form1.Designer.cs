@@ -1,4 +1,7 @@
-﻿namespace PQDE
+﻿using System;
+using System.Windows.Forms;
+
+namespace PQDE
 {
     partial class Form1
     {
@@ -234,6 +237,7 @@
             this.ClientSize = new System.Drawing.Size(935, 553);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "PQDE - PQ platform dasboard editor";
@@ -247,8 +251,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+
 
         #endregion
 

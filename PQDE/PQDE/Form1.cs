@@ -22,5 +22,21 @@ namespace PQDE
         {
             Commands.Open();
         }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Control | Keys.F))
+            {
+                MessageBox.Show("What the Ctrl+F?");
+                return true;
+            }
+            if (keyData == (Keys.Control | Keys.O))
+            {
+                Commands.Open();
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
     }
 }
